@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.div-main {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),  url(downloadaja.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 36.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(161, 119, 131);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.bismilah {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 79.7vh;
+    margin: 0;
+}
+.container, .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin: 0;
+}
+.container div a :hover {
+    border-radius: 65px;
+    transition: 0.5s;
+}
+.img-container div a :hover {
+    border-radius: 65px;
+    transition: 0.5s;
+}
+.container a img{
+    width: 70%;
+    height: auto;
+    margin-left: 30px;
+}
+.img-container a img {
+    width: 70%;
+    height: auto;
+    margin-left: 30px;
+}
+.container p {
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+}
+.img-container  p {
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .div-main {
+        height: 100vh;
+        /*background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),  url(downloadaja.jpg);
+        background-size: cover;
+        background-position: center;*/
+        background-color: blue !important;
+    }
+    .navbar {
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+    }
+    .logo {
+        font-size: 24px;
+        width: 80px;
+        z-index: 2;
+    }
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+    .navbar ul li {
+        margin: 0 10px;
+    }
+    .bismilah,
+    .container,
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container a img,
+    .img-container a img {
+        width: 60%;
+        height: auto;
+        margin-left: 60px;
+        justify-content: center;
+    }
+    .container p,
+    .img-container p {
+        text-align: center;
+        margin-left: 0;
+        color: aquamarine;
+    }
+    
+}
